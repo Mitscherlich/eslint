@@ -1,3 +1,2 @@
-link-workspace-dependencies: true
 packages:
   - 'packages/*'

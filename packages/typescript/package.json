@@ -1,6 +1,6 @@
 {
   "name": "@m9ch/eslint-config-ts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TODO",
   "keywords": [],
   "author": "Mitscherlich <mitscherlich36@gmail.com> (https://github.com/Mitscherlich)",
@@ -9,7 +9,8 @@
     "index.js"
   ],
   "peerDependencies": {
-    "eslint": ">=7.4.0"
+    "eslint": ">=7.4.0",
+    "typescript": ">=3.9"
   },
   "dependencies": {
     "@m9ch/eslint-config-base": "workspace:^",
@@ -20,7 +21,6 @@
     "eslint": "^8.10.0"
   },
   "publishConfig": {
-    "eslint": ">=7.4.0",
-    "typescript": ">=3.9"
+    "access": "public"
   }
 }
