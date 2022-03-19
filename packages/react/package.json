@@ -1,8 +1,9 @@
 {
-  "name": "@m9ch/eslint-config-ts",
+  "name": "@m9ch/eslint-config-react",
   "version": "0.1.0",
-  "description": "TODO",
+  "description": "",
   "keywords": [],
+  "license": "MIT",
   "author": "Mitscherlich <mitscherlich36@gmail.com> (https://github.com/Mitscherlich)",
   "main": "index.js",
   "files": [
@@ -12,15 +13,15 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@m9ch/eslint-config-base": "workspace:^",
-    "@typescript-eslint/eslint-plugin": "^5.13.0",
-    "@typescript-eslint/parser": "^5.13.0"
+    "@m9ch/eslint-config-ts": "workspace:^",
+    "eslint-plugin-react": "^7.29.4"
   },
   "devDependencies": {
-    "eslint": "^8.10.0"
+    "eslint": "^8.10.0",
+    "react": "^17.0.2",
+    "typescript": "^4.6.2"
   },
   "publishConfig": {
-    "eslint": ">=7.4.0",
-    "typescript": ">=3.9"
+    "access": "public"
   }
 }
