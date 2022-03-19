@@ -1,0 +1,26 @@
+{
+  "name": "@m9ch/eslint-config-typescript",
+  "version": "0.1.0",
+  "description": "TODO",
+  "keywords": [],
+  "author": "Mitscherlich <mitscherlich36@gmail.com> (https://github.com/Mitscherlich)",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@m9ch/eslint-config-base": "workspace:^",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "publishConfig": {
+    "eslint": ">=7.4.0",
+    "typescript": ">=3.9"
+  }
+}
