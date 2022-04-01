@@ -1,3 +1,3 @@
-# @m9ch/eslint-config-typescript
+# @m9ch/eslint-config-ts
 
-> TODO
+See [`@m9ch/eslint-config-all`](../all/README.md)

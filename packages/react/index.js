@@ -13,6 +13,8 @@ module.exports = {
       'error',
       'prefer-double',
     ],
+    'react/display-name': 'off',
     'react/react-in-jsx-scope': 'off',
+    'react/no-unknown-property': 'off',
   },
 }

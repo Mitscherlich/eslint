@@ -17,6 +17,14 @@
 pnpm add -D eslint @m9ch/eslint-config-all
 ```
 
+Add to your project `.eslintrc.js`:
+
+```js
+module.exports = {
+  extends: ['@m9ch/all'],
+}
+```
+
 ---
 
 copyleft and made with :heart: by [Mitscherlich](https://githuh.com/Mitscherlich)
