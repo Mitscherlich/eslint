@@ -1,12 +1,12 @@
 {
   "name": "@m9ch/eslint-config-base",
   "version": "0.1.1",
-  "description": "TODO",
   "keywords": [],
+  "description": "",
   "author": "Mitscherlich <mitscherlich36@gmail.com> (https://github.com/Mitscherlich)",
   "main": "index.js",
   "files": [
-    "index.js"
+    "*.js"
   ],
   "scripts": {
     "lint": "eslint . --config=index.js"
@@ -15,11 +15,11 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "eslint-config-standard": "17.0.0-1",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-html": "^6.2.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsonc": "^2.2.1",
+    "eslint-plugin-m9ch": "workspace:^",
     "eslint-plugin-markdown": "^2.2.1",
     "eslint-plugin-n": "^14.0.0",
     "eslint-plugin-promise": "^6.0.0",
