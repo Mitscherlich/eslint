@@ -3,9 +3,15 @@ const { overrides } = require('@m9ch/eslint-config-base')
 module.exports = {
   extends: [
     '@m9ch/eslint-config-base',
+    'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
   ],
   overrides,
+  settings: {
+    'import/resolver': {
+      node: { extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx', '.d.ts'] },
+    },
+  },
   rules: {
     'import/named': 'off',
 

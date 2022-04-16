@@ -1,7 +1,7 @@
 {
   "name": "@m9ch/eslint-config-ts",
   "version": "0.1.1",
-  "description": "TODO",
+  "description": "",
   "keywords": [],
   "author": "Mitscherlich <mitscherlich36@gmail.com> (https://github.com/Mitscherlich)",
   "main": "index.js",
@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "@m9ch/eslint-config-base": "workspace:^",
-    "@typescript-eslint/eslint-plugin": "^5.13.0",
-    "@typescript-eslint/parser": "^5.13.0"
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0"
   },
   "devDependencies": {
     "eslint": "^8.10.0"
