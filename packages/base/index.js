@@ -289,5 +289,10 @@ module.exports = {
     // yml
     'yml/quotes': ['error', { prefer: 'single', avoidEscape: false }],
     'yml/no-empty-document': 'off',
+
+    // custom plugin
+    'm9ch/no-leading-newline': 'error',
+    'm9ch/if-newline': 'error',
+    // 'm9ch/prefer-inline-type-import': 'error',
   },
 }
