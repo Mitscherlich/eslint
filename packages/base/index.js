@@ -32,6 +32,7 @@ module.exports = {
   plugins: [
     'html',
     'unicorn',
+    'm9ch',
   ],
   settings: {
     'import/resolver': {
@@ -299,8 +300,8 @@ module.exports = {
     'yml/no-empty-document': 'off',
 
     // custom plugin
-    // 'm9ch/no-leading-newline': 'error',
     'm9ch/if-newline': 'error',
+    'm9ch/import-dedupe': 'error',
     // 'm9ch/prefer-inline-type-import': 'error',
   },
 }

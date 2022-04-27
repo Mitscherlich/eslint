@@ -3,7 +3,4 @@ module.exports = {
   plugins: [
     'm9ch',
   ],
-  rules: {
-    'm9ch/no-leading-newline': 'error',
-  },
 }
