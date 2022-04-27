@@ -183,6 +183,7 @@ module.exports = {
     'object-curly-spacing': ['error', 'always'],
     'no-return-await': 'off',
     'space-before-function-paren': ['error', 'never'],
+    'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 0, maxEOF: 1 }],
 
     // es6
     'no-var': 'error',
@@ -291,7 +292,7 @@ module.exports = {
     'yml/no-empty-document': 'off',
 
     // custom plugin
-    'm9ch/no-leading-newline': 'error',
+    // 'm9ch/no-leading-newline': 'error',
     'm9ch/if-newline': 'error',
     // 'm9ch/prefer-inline-type-import': 'error',
   },
