@@ -223,6 +223,7 @@ module.exports = {
         avoidQuotes: true,
       },
     ],
+    'prefer-exponentiation-operator': 'error',
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
@@ -265,15 +266,13 @@ module.exports = {
     // Uppercase regex escapes
     'unicorn/escape-case': 'error',
     // Array.isArray instead of instanceof
-    'unicorn/no-array-instanceof': 'error',
+    'unicorn/no-instanceof-array': 'error',
     // Prevent deprecated `new Buffer()`
     'unicorn/no-new-buffer': 'error',
     // Keep regex literals safe!
     'unicorn/no-unsafe-regex': 'off',
     // Lowercase number formatting for octal, hex, binary (0x1'error' instead of 0X1'error')
     'unicorn/number-literal-case': 'error',
-    // ** instead of Math.pow()
-    'unicorn/prefer-exponentiation-operator': 'error',
     // includes over indexOf when checking for existence
     'unicorn/prefer-includes': 'error',
     // String methods startsWith/endsWith instead of more complicated stuff
@@ -288,6 +287,8 @@ module.exports = {
     'no-use-before-define': ['error', { functions: false, classes: false, variables: true }],
     'eslint-comments/disable-enable-pair': 'off',
     'import/no-named-as-default-member': 'off',
+    'import/no-named-as-default': 'off',
+    'import/namespace': 'off',
     'n/no-callback-literal': 'off',
 
     'sort-imports': [
