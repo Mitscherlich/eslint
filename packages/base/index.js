@@ -15,6 +15,7 @@ module.exports = {
   ],
   ignorePatterns: [
     '*.min.*',
+    '*.d.ts',
     'CHANGELOG.md',
     'dist',
     'LICENSE*',
@@ -106,6 +107,14 @@ module.exports = {
           {
             pathPattern: '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
             order: { type: 'asc' },
+          },
+          {
+            pathPattern: '^exports.*$',
+            order: [
+              'types',
+              'require',
+              'import',
+            ],
           },
         ],
       },
