@@ -15,8 +15,8 @@
   "dependencies": {
     "@m9ch/eslint-config-react": "workspace:^",
     "@m9ch/eslint-config-vue": "workspace:^",
-    "@typescript-eslint/eslint-plugin": "^5.26.0",
-    "@typescript-eslint/parser": "^5.26.0",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-html": "^6.2.0",
     "eslint-plugin-import": "^2.26.0",
@@ -30,7 +30,7 @@
     "yaml-eslint-parser": "^1.0.1"
   },
   "devDependencies": {
-    "eslint": "^8.16.0"
+    "eslint": "^8.23.0"
   },
   "publishConfig": {
     "access": "public"

@@ -14,13 +14,10 @@
   },
   "dependencies": {
     "@m9ch/eslint-config-base": "workspace:^",
-    "@typescript-eslint/eslint-plugin": "^5.26.0",
-    "@typescript-eslint/parser": "^5.26.0"
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1"
   },
   "devDependencies": {
-    "eslint": "^8.16.0"
-  },
-  "publishConfig": {
-    "access": "public"
+    "eslint": "^8.23.0"
   }
 }

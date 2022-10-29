@@ -22,7 +22,7 @@
     "prepublishOnly": "nr build"
   },
   "dependencies": {
-    "@typescript-eslint/utils": "^5.26.0"
+    "@typescript-eslint/utils": "^5.36.1"
   },
   "devDependencies": {
     "unbuild": "^0.7.4",
