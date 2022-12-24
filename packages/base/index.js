@@ -20,6 +20,7 @@ module.exports = {
     'dist',
     'LICENSE*',
     'output',
+    'out',
     'coverage',
     'public',
     'temp',
@@ -35,6 +36,7 @@ module.exports = {
     'html',
     'unicorn',
     'm9ch',
+    'no-only-tests',
   ],
   settings: {
     'import/resolver': {
@@ -146,6 +148,12 @@ module.exports = {
       },
     },
     {
+      files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
+      rules: {
+        'no-void': ['error', { allowAsStatement: true }],
+      },
+    },
+    {
       files: ['scripts/**/*.*', 'cli.*'],
       rules: {
         'no-console': 'off',
@@ -155,6 +163,7 @@ module.exports = {
       files: ['*.test.ts', '*.test.js', '*.spec.ts', '*.spec.js'],
       rules: {
         'no-unused-expressions': 'off',
+        'no-only-tests/no-only-tests': 'error',
       },
     },
     {
@@ -166,6 +175,7 @@ module.exports = {
         '@typescript-eslint/no-use-before-define': 'off',
         '@typescript-eslint/no-var-requires': 'off',
         '@typescript-eslint/comma-dangle': 'off',
+        '@typescript-eslint/consistent-type-imports': 'off',
         'import/no-unresolved': 'off',
         'no-alert': 'off',
         'no-console': 'off',
@@ -221,7 +231,6 @@ module.exports = {
         asyncArrow: 'always',
       },
     ],
-    'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 0, maxEOF: 1 }],
 
     // es6
     'no-var': 'error',
@@ -283,6 +292,7 @@ module.exports = {
     'require-await': 'off',
     'no-return-assign': 'off',
     'operator-linebreak': ['error', 'before'],
+    'max-statements-per-line': ['error', { max: 1 }],
 
     // unicorns
     // Pass error message when throwing errors
