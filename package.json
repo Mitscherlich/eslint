@@ -11,9 +11,9 @@
   "devDependencies": {
     "@m9ch/eslint-config-all": "workspace:*",
     "bumpp": "^8.2.1",
-    "eslint": "^8.23.0",
+    "eslint": "^8.29.0",
     "eslint-plugin-m9ch": "workspace:*",
     "rimraf": "^3.0.2",
-    "typescript": "^4.8.2"
+    "typescript": "^4.9.4"
   }
 }

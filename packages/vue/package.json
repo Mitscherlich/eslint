@@ -13,10 +13,12 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
+    "@m9ch/eslint-config-base": "workspace:^",
     "@m9ch/eslint-config-ts": "workspace:^",
-    "eslint-plugin-vue": "^9.4.0"
+    "eslint-plugin-vue": "^9.8.0",
+    "local-pkg": "^0.4.2"
   },
   "devDependencies": {
-    "eslint": "^8.23.0"
+    "eslint": "^8.29.0"
   }
 }

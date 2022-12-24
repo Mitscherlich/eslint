@@ -5,13 +5,6 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
-    }
-  },
   "files": [
     "dist"
   ],
@@ -22,10 +15,11 @@
     "prepublishOnly": "nr build"
   },
   "dependencies": {
-    "@typescript-eslint/utils": "^5.36.1"
+    "@typescript-eslint/utils": "^5.46.0"
   },
   "devDependencies": {
-    "unbuild": "^0.7.4",
-    "vitest": "^0.12.9"
+    "@types/node": "^18.11.13",
+    "unbuild": "^1.0.2",
+    "vitest": "^0.25.7"
   }
 }
