@@ -1,9 +1,13 @@
 {
   "name": "@m9ch/eslint-config-base",
   "version": "0.3.0",
-  "keywords": [],
   "description": "",
   "author": "Mitscherlich <mitscherlich36@gmail.com> (https://github.com/Mitscherlich)",
+  "license": "MIT",
+  "homepage": "https://github.com/Mitscherlich/eslint",
+  "keywords": [
+    "eslint-config"
+  ],
   "main": "index.js",
   "files": [
     "*.js"
@@ -17,19 +21,20 @@
   "dependencies": {
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-html": "^7.1.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsonc": "^2.5.0",
-    "eslint-plugin-m9ch": "workspace:^",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsonc": "^2.6.0",
+    "eslint-plugin-m9ch": "workspace:*",
     "eslint-plugin-markdown": "^3.0.0",
-    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-no-only-tests": "^3.1.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-unicorn": "^45.0.2",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "eslint-plugin-yml": "^1.4.0",
     "jsonc-eslint-parser": "^2.1.0",
     "yaml-eslint-parser": "^1.1.0"
   },
   "devDependencies": {
-    "eslint": "^8.29.0"
+    "eslint": "^8.33.0"
   }
 }

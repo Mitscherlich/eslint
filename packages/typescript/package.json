@@ -2,8 +2,12 @@
   "name": "@m9ch/eslint-config-ts",
   "version": "0.3.0",
   "description": "",
-  "keywords": [],
   "author": "Mitscherlich <mitscherlich36@gmail.com> (https://github.com/Mitscherlich)",
+  "license": "MIT",
+  "homepage": "https://github.com/Mitscherlich/eslint",
+  "keywords": [
+    "eslint-config"
+  ],
   "main": "index.js",
   "files": [
     "index.js"
@@ -13,12 +17,12 @@
     "typescript": ">=3.9"
   },
   "dependencies": {
-    "@m9ch/eslint-config-base": "workspace:^",
-    "@typescript-eslint/eslint-plugin": "^5.46.0",
-    "@typescript-eslint/parser": "^5.46.0",
-    "eslint-plugin-jest": "^27.1.6"
+    "@m9ch/eslint-config-base": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint-plugin-jest": "^27.2.1"
   },
   "devDependencies": {
-    "eslint": "^8.29.0"
+    "eslint": "^8.33.0"
   }
 }

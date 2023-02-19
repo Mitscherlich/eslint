@@ -2,9 +2,11 @@
   "name": "@m9ch/eslint-config-vue",
   "version": "0.3.0",
   "description": "",
-  "keywords": [],
-  "license": "MIT",
   "author": "Mitscherlich <mitscherlich36@gmail.com> (https://github.com/Mitscherlich)",
+  "license": "MIT",
+  "keywords": [
+    "eslint-config"
+  ],
   "main": "index.js",
   "files": [
     "index.js"
@@ -13,12 +15,12 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@m9ch/eslint-config-base": "workspace:^",
-    "@m9ch/eslint-config-ts": "workspace:^",
-    "eslint-plugin-vue": "^9.8.0",
-    "local-pkg": "^0.4.2"
+    "@m9ch/eslint-config-base": "workspace:*",
+    "@m9ch/eslint-config-ts": "workspace:*",
+    "eslint-plugin-vue": "^9.9.0",
+    "local-pkg": "^0.4.3"
   },
   "devDependencies": {
-    "eslint": "^8.29.0"
+    "eslint": "^8.33.0"
   }
 }

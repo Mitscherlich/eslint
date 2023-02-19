@@ -2,9 +2,12 @@
   "name": "@m9ch/eslint-config-react",
   "version": "0.3.0",
   "description": "",
-  "keywords": [],
-  "license": "MIT",
   "author": "Mitscherlich <mitscherlich36@gmail.com> (https://github.com/Mitscherlich)",
+  "license": "MIT",
+  "homepage": "https://github.com/Mitscherlich/eslint",
+  "keywords": [
+    "eslint-config"
+  ],
   "main": "index.js",
   "files": [
     "index.js"
@@ -13,13 +16,13 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@m9ch/eslint-config-ts": "workspace:^",
-    "eslint-plugin-react": "^7.31.1",
+    "@m9ch/eslint-config-ts": "workspace:*",
+    "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
-    "eslint": "^8.29.0",
+    "eslint": "^8.33.0",
     "react": "^18.2.0",
-    "typescript": "^4.8.2"
+    "typescript": "^4.9.5"
   }
 }
