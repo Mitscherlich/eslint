@@ -59,7 +59,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.json', '*.json5'],
+      files: ['*.json', '*.json5', '*.jsonc'],
       parser: 'jsonc-eslint-parser',
       rules: {
         'jsonc/array-bracket-spacing': ['error', 'never'],
@@ -191,6 +191,8 @@ module.exports = {
         '@typescript-eslint/no-var-requires': 'off',
         '@typescript-eslint/comma-dangle': 'off',
         '@typescript-eslint/consistent-type-imports': 'off',
+        '@typescript-eslint/no-namespace': 'off',
+        '@typescript-eslint/no-require-imports': 'off',
         'import/no-unresolved': 'off',
         'unused-imports/no-unused-imports': 'off',
         'unused-imports/no-unused-vars': 'off',
@@ -200,6 +202,8 @@ module.exports = {
         'no-undef': 'off',
         'no-unused-expressions': 'off',
         'no-unused-vars': 'off',
+        'm9ch/no-cjs-exports': 'off',
+        'm9ch/no-ts-export-equal': 'off',
       },
     },
   ],
@@ -236,7 +240,7 @@ module.exports = {
     'no-debugger': 'error',
     'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-cond-assign': ['error', 'always'],
-    'func-call-spacing': ['off', 'never'],
+    'func-call-spacing': 'off',
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
     'indent': ['error', 2, { SwitchCase: 1, VariableDeclarator: 1, outerIIFEBody: 1 }],
     'no-restricted-syntax': [
@@ -254,6 +258,19 @@ module.exports = {
         named: 'never',
         asyncArrow: 'always',
       },
+    ],
+    'no-restricted-globals': [
+      'error',
+      { name: 'global', message: 'Use `globalThis` instead.' },
+      { name: 'self', message: 'Use `globalThis` instead.' },
+    ],
+    'no-restricted-properties': [
+      'error',
+      { property: '__proto__', message: 'Use `Object.getPrototypeOf` or `Object.setPrototypeOf` instead.' },
+      { property: '__defineGetter__', message: 'Use `Object.defineProperty` instead.' },
+      { property: '__defineSetter__', message: 'Use `Object.defineProperty` instead.' },
+      { property: '__lookupGetter__', message: 'Use `Object.getOwnPropertyDescriptor` instead.' },
+      { property: '__lookupSetter__', message: 'Use `Object.getOwnPropertyDescriptor` instead.' },
     ],
 
     // es6
@@ -303,7 +320,7 @@ module.exports = {
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
     'consistent-return': 'off',
-    'complexity': ['off', 11],
+    'complexity': 'off',
     'eqeqeq': ['error', 'smart'],
     'no-alert': 'warn',
     'no-case-declarations': 'error',
@@ -351,6 +368,8 @@ module.exports = {
     // 'unicorn/prefer-node-protocol': semver.gt(process.version, '16.0.0') 
     //   ? 'error'
     //   : 'off',
+    // Prefer using number properties like `Number.isNaN` rather than `isNaN`
+    'unicorn/prefer-number-properties': 'error',
 
     'no-use-before-define': ['error', { functions: false, classes: false, variables: true }],
     'eslint-comments/disable-enable-pair': 'off',
